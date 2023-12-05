@@ -24,10 +24,10 @@ source libs/details.sh
 
 # -------------------------------- VARIÁVEIS -------------------------------- #
 # Carrega as variáveis de ambiente do arquivo .env
+DATA_ATUAL=$(date +'%Y.%m.%d')
 set -o allexport
 source .env
 set +o allexport
-
 # -------------------------------- FUNÇÕES -------------------------------- #
 function trapped () {
 	echo -e "${COR_VERMELHO}Erro na linha $1${COR_RESET}"
